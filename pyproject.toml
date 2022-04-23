@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gitdriver"
+version = "0.0.1"
+description = "Command line application and library to turn Google Docs/Sheets/Slides revision history into a Git repo"
+authors = ["Daniel Chen <danielchen04@hotmail.ca>"]
+license = "LGPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/potatoeggy/gitdriver"
+documentation = "https://github.com/potatoeggy/gitdriver"
+keywords = ["docs", "git", "revision history", "drive", "google"]
+
+[tool.poetry.scripts]
+gitdriver = gitdriver.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.4.0"
+requests = "^2.27.0"
+
+[tool.poetry.dev-dependencies]
+types-requests = "^2.26.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
